@@ -4,6 +4,7 @@
     @detect="onDetect"
     :paused="paused"
     :track="paintOutline"
+    class="flex max-w-[450px] w-full h-[270px] md:h-[340px] aspect-[450/340] relative overflow-clip rounded-3xl"
   />
 </template>
 
@@ -80,13 +81,6 @@
 </script>
 
 <style>
-  .qrcode-stream-wrapper {
-    @apply flex max-w-[450px] w-full h-[270px] md:h-[340px] aspect-[450/340] relative overflow-clip rounded-3xl
-  }
-
-  .qrcode-stream-camera {
-    @apply max-w-[450px] w-full h-[270px] md:h-[340px] aspect-[450/340]
-  }
 
   .qrcode-stream-camera {
     @apply absolute top-0 left-0 max-w-[450px] w-full h-[270px] md:h-[340px] aspect-[450/340]
